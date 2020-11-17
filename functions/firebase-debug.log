@@ -1,0 +1,31 @@
+[debug] [2020-11-17T22:29:45.562Z] ----------------------------------------------------------------------
+[debug] [2020-11-17T22:29:45.566Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve --only=hosting,functions
+[debug] [2020-11-17T22:29:45.567Z] CLI Version:   8.16.2
+[debug] [2020-11-17T22:29:45.567Z] Platform:      win32
+[debug] [2020-11-17T22:29:45.567Z] Node Version:  v12.18.3
+[debug] [2020-11-17T22:29:45.569Z] Time:          Wed Nov 18 2020 01:29:45 GMT+0300 (Arabian Standard Time)
+[debug] [2020-11-17T22:29:45.569Z] ----------------------------------------------------------------------
+[debug] [2020-11-17T22:29:45.570Z] 
+[debug] [2020-11-17T22:29:45.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-17T22:29:45.587Z] > authorizing via signed-in user
+[debug] [2020-11-17T22:29:45.588Z] [iam] checking project sports-store-c8ab9 for permissions ["firebase.projects.get"]
+[debug] [2020-11-17T22:29:45.593Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-store-c8ab9:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-17T22:29:48.274Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 22:29:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1783","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-17T22:29:48.277Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sports-store-c8ab9  
+ 
+[debug] [2020-11-17T22:29:48.984Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 22:29:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-17T22:29:48.991Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sports-store-c8ab9/webApps/-/config  
+ 
+[debug] [2020-11-17T22:29:50.509Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 22:29:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] +  functions: Using node@12 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@12 from host."}}
+[debug] [2020-11-17T22:29:51.053Z] defaultcredentials: writing to file C:\Users\usama\AppData\Roaming\firebase\usamaidris567_gmail_com_application_default_credentials.json
+[debug] [2020-11-17T22:29:51.075Z] Setting GAC to C:\Users\usama\AppData\Roaming\firebase\usamaidris567_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\usama\\AppData\\Roaming\\firebase\\usamaidris567_gmail_com_application_default_credentials.json"}}
+[info] i  functions: Watching "E:\myProjects\sports_store\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\myProjects\\sports_store\\functions\" for Cloud Functions..."}}
+[debug] [2020-11-17T22:29:51.154Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2020-11-17T22:29:51.155Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2020-11-17T22:29:51.155Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2020-11-17T22:29:51.156Z] [worker-~diagnostic~-9ac3f505-219e-43de-94c6-353e1aaa7d76]: Assigning socketPath: \\?\pipe\E:\myProjects\sports_store\functions\9260 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-9ac3f505-219e-43de-94c6-353e1aaa7d76]: Assigning socketPath: \\\\?\\pipe\\E:\\myProjects\\sports_store\\functions\\9260"}}
+[debug] [2020-11-17T22:29:51.157Z] [worker-~diagnostic~-9ac3f505-219e-43de-94c6-353e1aaa7d76]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-9ac3f505-219e-43de-94c6-353e1aaa7d76]: BUSY"}}
