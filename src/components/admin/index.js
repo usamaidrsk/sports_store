@@ -1,20 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Store from "../components/Store";
-import ShoppingCart from "../components/ShoppingCart";
-import Checkout from "../components/Checkout";
-import OrderThanks from "../components/OrderThanks";
+import Store from "../components/store";
+import ShoppingCart from "../components/shoppingCart";
+import Checkout from "../components/checkout";
+import OrderThanks from "../components/orderThanks";
 
 const Authentication = () =>
- import(/* webpackChunkName: "admin" */ "../components/admin/Authentication");
+ import(/* webpackChunkName: "admin" */ "../components/admin/authentication");
 const Admin = () =>
- import(/* webpackChunkName: "admin" */ "../components/admin/Admin");
+ import(/* webpackChunkName: "admin" */ "../components/admin/admin");
 const ProductAdmin = () =>
- import(/* webpackChunkName: "admin" */ "../components/admin/ProductAdmin");
+ import(/* webpackChunkName: "admin" */ "../components/admin/productAdmin");
 const OrderAdmin = () =>
- import(/* webpackChunkName: "admin" */ "../components/admin/OrderAdmin");
+ import(/* webpackChunkName: "admin" */ "../components/admin/orderAdmin");
 const ProductEditor = () =>
- import(/* webpackChunkName: "admin" */ "../components/admin/ProductEditor");
+ import(/* webpackChunkName: "admin" */ "../components/admin/productEditor");
 
 import dataStore from "../store";
 Vue.use(VueRouter);
