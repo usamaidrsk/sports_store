@@ -5,21 +5,11 @@ import cartModule from "./cart"
 import OrdersModule from "./orders";
 import AuthModule from "./auth";
 
-// const baseUrl = "http://localhost:3500";
-const baseUrl = "/api";
+const baseUrl = "http://localhost:3500";
 const productsUrl = `${baseUrl}/products`;
 const categoriesUrl = `${baseUrl}/categories`;
 
 Vue.use(Vuex);
-// const testData = [];
-// for (let i = 1; i <= 10; i++) {
-//     testData.push({
-//         id: i,
-//         name: `Product #${i}`, category: `Category ${i % 3}`,
-//         description: `This is Product #${i}`,
-//         price: i * 50
-//     })
-// }
 export default new Vuex.Store({
     // strict: true,
     strict: false,
@@ -29,9 +19,7 @@ export default new Vuex.Store({
         auth: AuthModule
     },
     state: {
-        // products: [],
         categoriesData: [],
-        // productsTotal: 0,
         currentPage: 1,
         pageSize: 4,
         currentCategory: "All",
@@ -41,35 +29,17 @@ export default new Vuex.Store({
         showSearch: false
     },
     getters: {
-        // processedProducts: state => {
-        //     let index = (state.currentPage -1) * state.pageSize;
-        //     return state.products.slice(index, index + state.pageSize);
-        //     },
-        // pageCount: state => Math.ceil(state.productsTotal / state.pageSize)
-
-
-        // productsFilteredByCategory: state => state.products.filter(
-            // p => state.currentCategory == "All"|| p.category == state.currentCategory
-            // ),
-
         // eslint-disable-next-line no-unused-vars
         processedProducts: (state, getters) => {
-            // let index = (state.currentPage -1) * state.pageSize;
-            // return getters.productsFilteredByCategory.slice(index, index + state.pageSize);
             return state.pages[state.currentPage];
         },
         productById:(state) => (id) => {
             return state.pages[state.currentPage].find(p => p.id == id);
         },
-        // pageCount: (state, getters) =>Math.ceil(getters.productsFilteredByCategory.length / state.pageSize),
-        // categories: state => ["All",...new Set(state.products.map(p => p.category).sort())]
         categories: state => ["All", ...state.categoriesData],
         pageCount: (state) => state.serverPageCount,
     },
     mutations: {
-        // setCurrentPage(state, page) {
-        //     state.currentPage = page;
-        //     },
         _setCurrentPage: (state, page) => {state.currentPage = page;},
         _setPageSize(state, size) {
             state.pageSize = size;
@@ -87,12 +57,6 @@ export default new Vuex.Store({
             let index = page.findIndex(p => p.id == product.id);
             Vue.set(page, index, product);
         },
-        // setData(state, data) {
-        //     state.products = data.pdata;
-        //     state.productsTotal = data.pdata.length;
-        //     state.categoriesData = data.cdata.sort();
-        // }
-
 
         addPage(state, page) {
             for (let i = 0; i < page.pageCount; i++) {
@@ -120,10 +84,6 @@ export default new Vuex.Store({
     },
     actions: {
         async getData(context) {
-            // let pdata = (await Axios.get(productsUrl)).data;
-            // let cdata = (await Axios.get(categoriesUrl)).data;
-            // context.commit("setData", { pdata, cdata} );
-
             await context.dispatch("getPage", 2);
                 context.commit("setCategories", (await Axios.get(categoriesUrl)).data);
             },
