@@ -28,7 +28,7 @@
     <span class="mx-1">
       <button 
         v-for="i in pageNumbers" v-bind:key="i"
-        class="btn btn-secpmdary"
+        class="btn btn-secpmdary md-and-up"
         v-bind:class="{ 'btn-primary': i == currentPage }"
         v-on:click="setCurrentPage(i)"
       >
