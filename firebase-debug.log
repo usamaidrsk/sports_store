@@ -1,0 +1,37 @@
+[debug] [2020-11-17T22:24:10.258Z] ----------------------------------------------------------------------
+[debug] [2020-11-17T22:24:10.264Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js serve --only=hosting,functions
+[debug] [2020-11-17T22:24:10.265Z] CLI Version:   8.16.2
+[debug] [2020-11-17T22:24:10.265Z] Platform:      win32
+[debug] [2020-11-17T22:24:10.265Z] Node Version:  v12.18.3
+[debug] [2020-11-17T22:24:10.267Z] Time:          Wed Nov 18 2020 01:24:10 GMT+0300 (Arabian Standard Time)
+[debug] [2020-11-17T22:24:10.268Z] ----------------------------------------------------------------------
+[debug] [2020-11-17T22:24:10.268Z] 
+[debug] [2020-11-17T22:24:10.284Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-17T22:24:10.285Z] > authorizing via signed-in user
+[debug] [2020-11-17T22:24:10.285Z] [iam] checking project sports-store-c8ab9 for permissions ["firebase.projects.get"]
+[debug] [2020-11-17T22:24:10.291Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-store-c8ab9:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-17T22:24:12.661Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 22:24:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1756","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-17T22:24:12.666Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sports-store-c8ab9  
+ 
+[debug] [2020-11-17T22:24:13.546Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 22:24:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-17T22:24:13.557Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sports-store-c8ab9/webApps/-/config  
+ 
+[debug] [2020-11-17T22:24:14.835Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 22:24:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] +  functions: Using node@12 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@12 from host."}}
+[debug] [2020-11-17T22:24:15.695Z] defaultcredentials: writing to file C:\Users\usama\AppData\Roaming\firebase\usamaidris567_gmail_com_application_default_credentials.json
+[debug] [2020-11-17T22:24:15.720Z] Setting GAC to C:\Users\usama\AppData\Roaming\firebase\usamaidris567_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\usama\\AppData\\Roaming\\firebase\\usamaidris567_gmail_com_application_default_credentials.json"}}
+[info] i  functions: Watching "E:\myProjects\sports_store\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\myProjects\\sports_store\\functions\" for Cloud Functions..."}}
+[debug] [2020-11-17T22:24:16.353Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2020-11-17T22:24:16.353Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2020-11-17T22:24:16.354Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2020-11-17T22:24:16.355Z] [worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: Assigning socketPath: \\?\pipe\E:\myProjects\sports_store\functions\15508 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: Assigning socketPath: \\\\?\\pipe\\E:\\myProjects\\sports_store\\functions\\15508"}}
+[debug] [2020-11-17T22:24:16.356Z] [worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: BUSY"}}
+[debug] [2020-11-17T22:24:17.854Z] [runtime-status] [15508] Functions runtime initialized. {"cwd":"E:\\myProjects\\sports_store\\functions","node_version":"12.18.3"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [15508] Functions runtime initialized. {\"cwd\":\"E:\\\\myProjects\\\\sports_store\\\\functions\",\"node_version\":\"12.18.3\"}"}}
+[debug] [2020-11-17T22:24:17.863Z] [runtime-status] [15508] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [15508] Disabled runtime features: undefined"}}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Functions emulator requires the module \"firebase-admin\" to be installed. This package is in your package.json, but it's not available. You probably need to run \"npm install\" in your functions directory."}}
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above) {"metadata":{"emulator":{"name":"functions"},"message":"Your functions could not be parsed due to an issue with your node_modules (see above)"}}
+[debug] [2020-11-17T22:24:17.902Z] [worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: exited"}}
+[debug] [2020-11-17T22:24:17.902Z] [worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fa398f6e-4d08-44b7-9bfb-9f613dafe22b]: FINISHED"}}

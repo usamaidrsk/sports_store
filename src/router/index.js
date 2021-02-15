@@ -16,7 +16,7 @@ Vue.use(VueRouter);
 export default new VueRouter({
     mode: "history",
     routes: [
-        { path: "/", component: () => import("../components/Store.vue")},
+        { path: "/", component: () => import("../components/store.vue")},
         { path: "/cart", component: () => import("../components/shoppingCart.vue") },
         { path: "/checkout", component: Checkout},
         { path: "/thanks/:id", component: OrderThanks},
