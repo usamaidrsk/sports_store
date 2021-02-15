@@ -1,8 +1,10 @@
 import Axios from "axios";
 import Vue from "vue";
 
-const ORDERS_URL = "/api/orders";
+// const ORDERS_URL = "http://localhost:3500/orders";
+const ORDERS_URL = "http://localhost:5000/api/orders";
 export default {
+    namespaced: true,
     state: {
         orders:[]
     },

@@ -5,7 +5,8 @@ import cartModule from "./cart"
 import OrdersModule from "./orders";
 import AuthModule from "./auth";
 
-const baseUrl = "http://localhost:3500";
+// const baseUrl = "http://localhost:3500";
+const baseUrl = "http://localhost:5000/api";
 const productsUrl = `${baseUrl}/products`;
 const categoriesUrl = `${baseUrl}/categories`;
 

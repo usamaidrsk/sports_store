@@ -51,8 +51,13 @@ export default {
         }
     },
     methods: {
-        ...mapActions(["getOrders","updateOrder"]),
-        ...mapMutations(["changeOrderShipped"]),
+        ...mapActions({
+            getOrders: "orders/getOrders",
+            updateOrder: "orders/updateOrder"
+        }),
+        ...mapMutations({
+            changeOrderShipped: "orders/changeOrderShipped"
+        }),
         getTotal(order) {
             if (order.cartLines != null && order.cartLines.length > 0) {
                 return order.cartLines.reduce((total, line) =>
