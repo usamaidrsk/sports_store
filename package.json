@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "json": "json-server data.js -p 3500 -m authMiddleware.js",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "json": "json-server data.js -p 3500 -m authMiddleware.js"
   },
   "dependencies": {
     "axios": "^0.18.1",

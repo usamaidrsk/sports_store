@@ -6,8 +6,6 @@
 </template>
 
 <script>
-    // import Store from "./components/store";
-    // import shoppingCart from "./components/shoppingCart"
 
     import { mapActions } from "vuex";
     export default {

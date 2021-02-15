@@ -10,7 +10,7 @@
                 Authentication Failed. Please try again.
         </h4>
         <div class="form-group">
-            <label>Username</label>
+            <label>Email</label>
             <input class="form-control" v-model="$v.username.$model">
             <validation-error v-bind:validation="$v.username" />
         </div>
