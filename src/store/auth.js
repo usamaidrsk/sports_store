@@ -1,5 +1,5 @@
 import Axios from "axios";
-const loginUrl = "http://localhost:3500/login";
+const loginUrl = "https://murmuring-stream-71719.herokuapp.com/api/login";
 // const loginUrl = "/api/login";
 export default {
 state: {
