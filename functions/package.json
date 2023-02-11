@@ -4,7 +4,7 @@
   "dependencies": {
     "firebase-admin": "^9.4.1",
     "firebase-functions": "^3.11.0",
-    "json-server": "^0.16.1",
+    "json-server": "^0.17.1",
     "pluralize": "^8.0.0"
   },
   "private": true,
